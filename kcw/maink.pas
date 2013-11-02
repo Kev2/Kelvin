@@ -26,6 +26,7 @@ type
   Tkelvinm = class(TForm)
     ACaption: TLabel;
     esrch: TEdit;
+    Image1: TImage;
     ListBox1: TListBox;
     Logo: TImage;
     LSearch: TLabel;

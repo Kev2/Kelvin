@@ -14,7 +14,14 @@ type
   { Tabk }
 
   Tabk = class(TForm)
-    tgroupbox: tgroupbox;
+    GroupBox1: TGroupBox;
+    Image1: TImage;
+    chlogo: TImage;
+    Kelvin: TLabel;
+    chl: TLabel;
+    Label2: TLabel;
+    CUtility: TLabel;
+    ver: TLabel;
   private
     { private declarations }
   public
