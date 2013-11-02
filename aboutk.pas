@@ -16,7 +16,9 @@ type
   Tabk = class(TForm)
     GroupBox1: TGroupBox;
     Image1: TImage;
+    chlogo: TImage;
     Kelvin: TLabel;
+    chl: TLabel;
     Label2: TLabel;
     CUtility: TLabel;
     ver: TLabel;
@@ -38,4 +40,3 @@ initialization
   {$I aboutk.lrs}
 
 end.
-
