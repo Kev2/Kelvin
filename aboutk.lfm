@@ -1,35 +1,39 @@
 object abk: Tabk
-  Left = 409
-  Height = 343
-  Top = 237
-  Width = 435
+  Left = 407
+  Height = 430
+  Top = 159
+  Width = 500
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsDialog
   Caption = 'About Kelvin'
-  ClientHeight = 343
-  ClientWidth = 435
+  ClientHeight = 430
+  ClientWidth = 500
   Position = poScreenCenter
   ShowInTaskBar = stNever
   LCLVersion = '1.0.12.0'
   object GroupBox1: TGroupBox
-    Left = 17
-    Height = 304
-    Top = 18
-    Width = 400
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Owner
+    Left = 20
+    Height = 330
+    Top = 20
+    Width = 460
+    BorderSpacing.Top = 20
     Caption = 'Powered by Lazarus'
-    ClientHeight = 289
-    ClientWidth = 398
+    ClientHeight = 315
+    ClientWidth = 458
     Font.Height = -11
     Font.Name = 'Sans'
     ParentFont = False
     TabOrder = 0
-    object Kelvin: TLabel
+    object maint: TLabel
       AnchorSideLeft.Control = GroupBox1
       AnchorSideLeft.Side = asrCenter
       AnchorSideTop.Control = GroupBox1
       AnchorSideBottom.Control = CUtility
       AnchorSideBottom.Side = asrBottom
-      Left = 172
+      Left = 202
       Height = 20
       Top = 20
       Width = 55
@@ -44,30 +48,35 @@ object abk: Tabk
       ParentColor = False
       ParentFont = False
     end
-    object Label2: TLabel
+    object data: TLabel
       AnchorSideLeft.Control = GroupBox1
       AnchorSideLeft.Side = asrCenter
       AnchorSideTop.Control = GroupBox1
       AnchorSideBottom.Control = GroupBox1
       AnchorSideBottom.Side = asrBottom
-      Left = 139
-      Height = 49
-      Top = 235
-      Width = 121
+      Cursor = crHandPoint
+      Left = 179
+      Height = 43
+      Top = 267
+      Width = 101
       Alignment = taCenter
       Anchors = [akLeft, akBottom]
       BorderSpacing.Bottom = 5
       Caption = 'Norberto Ventafini'#10'nventafini@gmx.com'#10'September 23, 2013'
+      Font.Height = -9
+      Font.Name = 'Sans'
       ParentColor = False
+      ParentFont = False
+      OnClick = dataClick
     end
     object Image1: TImage
       AnchorSideLeft.Control = GroupBox1
       AnchorSideLeft.Side = asrCenter
       AnchorSideTop.Control = GroupBox1
       AnchorSideTop.Side = asrCenter
-      Left = 148
+      Left = 178
       Height = 98
-      Top = 95
+      Top = 108
       Width = 103
       Center = True
       Picture.Data = {
@@ -1682,7 +1691,7 @@ object abk: Tabk
       AnchorSideLeft.Control = GroupBox1
       AnchorSideLeft.Side = asrCenter
       AnchorSideTop.Control = GroupBox1
-      Left = 149
+      Left = 179
       Height = 15
       Top = 45
       Width = 100
@@ -1694,12 +1703,14 @@ object abk: Tabk
     object ver: TLabel
       AnchorSideLeft.Control = GroupBox1
       AnchorSideLeft.Side = asrCenter
-      AnchorSideTop.Control = GroupBox1
-      Left = 185
+      AnchorSideTop.Control = CUtility
+      AnchorSideBottom.Side = asrBottom
+      Left = 215
       Height = 20
-      Top = 205
+      Top = 70
       Width = 29
-      BorderSpacing.Top = 205
+      BorderSpacing.Top = 25
+      BorderSpacing.Bottom = 2
       Caption = '1.0'
       Font.Color = clActiveCaption
       Font.Height = -16
@@ -1708,5 +1719,44 @@ object abk: Tabk
       ParentColor = False
       ParentFont = False
     end
+    object http: TLabel
+      AnchorSideLeft.Control = GroupBox1
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Control = Image1
+      AnchorSideTop.Side = asrBottom
+      AnchorSideBottom.Side = asrBottom
+      Cursor = crHandPoint
+      Left = 161
+      Height = 15
+      Top = 231
+      Width = 136
+      AutoSize = False
+      BorderSpacing.Top = 25
+      Caption = 'http://kelvin.freetzi.com'
+      Font.Color = clSkyBlue
+      Font.Height = -11
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+      OnClick = httpClick
+    end
+  end
+  object lic: TButton
+    Left = 160
+    Height = 25
+    Top = 376
+    Width = 75
+    Caption = 'Licence'
+    OnClick = licClick
+    TabOrder = 1
+  end
+  object clse: TButton
+    Left = 264
+    Height = 25
+    Top = 376
+    Width = 75
+    Caption = 'Close'
+    OnClick = clseClick
+    TabOrder = 2
   end
 end
