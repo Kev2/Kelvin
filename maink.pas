@@ -76,6 +76,7 @@ var
   edi1, edi2: tedit;
   ttop, tleft: shortint;
   mcd, cdm: double;
+  validate: smallint;
 
 implementation
 
@@ -3101,23 +3102,27 @@ different in every unit. For example undenary allows only a. Duodenary allows a 
 }
 
   // Computer numbers
-  begin
+     // Allowing letters and numbers
+     a:= sinput1;
+  for validate:= 1 to length(a) do
+         if (a[validate] < char(48)) or (a[validate] > char(57)) and
+         (a[validate] < char(65)) or (a[validate] > char(90)) and
+         (a[validate] < char(97)) or (a[validate] > char(122)) then
+         begin adit[s].Caption := 'Invalid entry'; adit[s].SelectAll; sinput1 := ''; end;
+
     for llen := 1 to 25 do
       if alabel[s].Caption = tcnum[llen].tu then
       begin
         for gridlin := 1 to 25 do
         begin
 
+//Binary section, llen < 9
         if llen < 9 then // Base 2 to 9
           begin  // binary    1
-            if (key <> 8) then
-              if (key < 45) or (key > 57) and (key < 95) or (key > 105) and
-                (key <> 110) and (key <> 8) then
-              begin
-                adit[s].Clear;
-                sinput1 := '';
-              end;
-            for f := llen to 8 do
+     for f:= 1 to length(a) do
+         if (a[f] < char(48)) or (a[f] > char(57)) then
+           begin adit[s].Caption := 'Invalid entry'; adit[s].SelectAll; sinput1:= ''; end;
+            for f:= llen to 8 do
 {
 b is the array in cnum unit with the allowed characters (2..9).
 Bid is the function which calculate Base 2 to Base 9 and Dbi is the function which calculates decimal to Base 2-9.
@@ -3126,19 +3131,11 @@ When base 10 is selected, dbi gets the results for base 2-9, while bid gets the 
 Dtoa (decimal to all) obtains the results from base 10 to base 11-20.
 Bases beyond 30 have their own functions.
 }
-              if (pos(b[f], sinput1) > 0) then
-              begin
-                adit[s].Caption := 'Invalid entry';
-                adit[s].selectall;
-                sinput1 := '';
-              end
-              else;
+              if (pos(b[f], a) > 0) then
+              begin adit[s].Caption := 'Invalid entry'; adit[s].selectall;  sinput1 := ''; end;
+
             if (pos('.', sinput1) > 0) then
-            begin
-              adit[s].Clear;
-              sinput1 := '';
-            end
-            else
+            begin adit[s].Clear; sinput1 := ''; end;
             if (sinput1 <> '') and (sinput1 <> 'Invalid entry') then
             begin
               stringgrid1.Cells[1, llen] := sinput1;
@@ -3156,19 +3153,12 @@ Bases beyond 30 have their own functions.
             end;
           end;
 
+// Decimal section, llen is 9
           if llen = 9 then
-          begin   // decimal
-            if (key <> 8) then
-              if (key < 45) or (key > 57) and (key < 95) or (key > 105) and (key <> 110) then
-              begin
-                adit[s].Clear;
-                sinput1 := '';
-              end;
-            if (pos('.', sinput1) > 0) then // if . is pressed for second time, the display is cleared
-            begin
-              adit[s].Clear;
-              sinput1 := '';
-            end;
+          begin
+          if (pos('.', sinput1) > 0) then // if . is pressed for second time, the display is cleared
+            begin adit[s].Clear; sinput1 := ''; end;
+
             if (sinput1 <> '') and (sinput1 <> 'Invalid entry') then
             begin
               stringgrid1.Cells[1, llen] := sinput1;
@@ -3185,29 +3175,16 @@ Bases beyond 30 have their own functions.
             end;
           end;
 
-          // to 20
+// to 20
           if (llen > 9) and (llen <= 19) then
           begin
-            if (key <> 110) and (key <> 8) and (key <> 16) then
-              if (key < 48) or (key > 57) and (key < 65) or (key > (55 + llen)) and
-                (key < 95) or (key > 105) then
-              begin
-                adit[s].Caption := 'Invalid entry';
-                adit[s].SelectAll;
-                sinput1 := '';
-              end;
-            for f := 65 to 90 do
-              if (pos(char(f), sinput1) > 0) then
-              begin
-                adit[s].Caption := 'Invalid entry';
-                adit[s].SelectAll;
-                sinput1 := '';
-              end;
+          a:= sinput1;
+          for f:= llen-8 to 52 do
+              if (pos(let62[f], a) > 0) then
+              begin adit[s].Caption := 'Invalid entry'; adit[s].SelectAll; sinput1 := ''; end;
+
             if (pos('.', sinput1) > 0) then
-            begin
-              adit[s].Clear;
-              sinput1 := '';
-            end;
+            begin adit[s].Clear; sinput1 := ''; end;
             if (sinput1 <> '') and (sinput1 <> 'Invalid entry') then
             begin
               stringgrid1.Cells[1, llen] := sinput1;
@@ -3224,29 +3201,16 @@ Bases beyond 30 have their own functions.
               stringgrid1.Cells[1, 25] := dto62(strtofloat(stringgrid1.Cells[1, 9]), 62);
             end;
           end;
-          // 30
+// 30
           if (llen = 20) then
           begin
-            if (key <> 110) and (key <> 8) and (key <> 16) then
-              if (key < 48) or (key > 57) and (key < 65) or (key > 84) and
-                (key < 95) or (key > 105) then
-              begin
-                adit[s].Caption := 'Invalid entry';
-                adit[s].SelectAll;
-                sinput1 := '';
-              end;
-            for f := 65 to 90 do
-              if (pos(char(f), sinput1) > 0) then
-              begin
-                adit[s].Caption := 'Invalid entry';
-                adit[s].SelectAll;
-                sinput1 := '';
-              end;
+          for f:= 21 to 52 do
+              if (pos(let62[f], a) > 0) then
+              begin adit[s].Caption := 'Invalid entry'; adit[s].SelectAll; sinput1 := '0'; end;
+
             if (pos('.', sinput1) > 0) then
-            begin
-              adit[s].Clear;
-              sinput1 := '';
-            end;
+            begin adit[s].Clear; sinput1 := ''; end;
+
             if (sinput1 <> '') and (sinput1 <> 'Invalid entry') then
             begin
               stringgrid1.Cells[1, llen] := sinput1;
@@ -3263,29 +3227,12 @@ Bases beyond 30 have their own functions.
               stringgrid1.Cells[1, 25] := dto62(strtofloat(stringgrid1.Cells[1, 9]), 62);
             end;
           end;
-          // 36
+// 36
           if (llen = 21) then
           begin
-            if (key <> 110) and (key <> 8) and (key <> 16) then
-              if (key < 48) or (key > 57) and (key < 65) or (key > 90) and
-                (key < 95) or (key > 105) then
-              begin
-                adit[s].Caption := 'Invalid entry';
-                adit[s].SelectAll;
-                sinput1 := '';
-              end;
-            for f := 65 to 90 do
-              if (pos(char(f), sinput1) > 0) then
-              begin
-                adit[s].Caption := 'Invalid entry';
-                adit[s].SelectAll;
-                sinput1 := '';
-              end;
             if (pos('.', sinput1) > 0) then
-            begin
-              adit[s].Clear;
-              sinput1 := '';
-            end;
+            begin  adit[s].Clear; sinput1 := ''; end;
+
             if (sinput1 <> '') and (sinput1 <> 'Invalid entry') then
             begin
               stringgrid1.Cells[1, llen] := sinput1;
@@ -3303,31 +3250,18 @@ Bases beyond 30 have their own functions.
             end;
           end;
 
-          // 40
+// 40
           if (llen = 22) then
           begin
-            if (key <> 110) and (key <> 8) and (key <> 16) then
-              if (key < 48) or (key > 57) and (key < 65) or (key > 90) and
-                (key < 95) or (key > 105) then
-              begin
-                adit[s].Caption := 'Invalid entry';
-                adit[s].SelectAll;
-                sinput1 := '';
-              end
-              else
-                for f := 69 to 90 do
-                  if (pos(char(f), sinput1) > 0) then
-                  begin
-                    adit[s].Caption := 'Invalid entry';
-                    adit[s].SelectAll;
-                    sinput1 := '';
-                  end;
+            a:= sinput1;
+            for f := 69 to 90 do
+                if (pos(char(f), a) > 0) then
+                begin adit[s].Caption := 'Invalid entry'; adit[s].SelectAll; sinput1 := ''; end;
+
             if (pos('.', sinput1) > 0) then
-            begin
-              adit[s].Clear;
-              sinput1 := '';
-            end;
+            begin adit[s].Clear; sinput1 := ''; end;
             if (sinput1 <> '') and (sinput1 <> 'Invalid entry') then
+
             begin
               stringgrid1.Cells[1, llen] := sinput1;
               stringgrid1.Cells[1, 9] := ftod(sinput1, 40);
@@ -3343,29 +3277,17 @@ Bases beyond 30 have their own functions.
               stringgrid1.Cells[1, 25] := dto62(strtofloat(stringgrid1.Cells[1, 9]), 62);
             end;
           end;
-          // 50
+// 50
           if (llen = 23) then
           begin
-            if (key <> 110) and (key <> 8) and (key <> 16) then
-              if (key < 46) or (key > 57) and (key < 65) or (key > 90) and
-                (key < 95) or (key > 105) then
-              begin
-                adit[s].Caption := 'Invalid entry';
-                adit[s].SelectAll;
-                sinput1 := '';
-              end;
+
             for f := 79 to 90 do
-              if (pos(char(f), sinput1) > 0) then
-              begin
-                adit[s].Caption := 'Invalid entry';
-                adit[s].SelectAll;
-                sinput1 := '';
-              end;
+              if (pos(char(f), a) > 0) then
+              begin adit[s].Caption := 'Invalid entry'; adit[s].SelectAll; sinput1 := ''; end;
+
             if (pos('.', sinput1) > 0) then
-            begin
-              adit[s].Clear;
-              sinput1 := '';
-            end;
+            begin adit[s].Clear; sinput1 := ''; end;
+
             if (sinput1 <> '') and (sinput1 <> 'Invalid entry') then
             begin
               stringgrid1.Cells[1, llen] := sinput1;
@@ -3382,31 +3304,18 @@ Bases beyond 30 have their own functions.
             end;
           end;
 
-          // 60
+// 60
           if (llen = 24) then
           begin
-            if (key <> 110) and (key <> 8) and (key <> 16) then
-              //     if (key < 48) or (key > 57) and (key < 65) or (key > 90) then
-              if (key < 48) or (key > 57) and (key < 65) or (key > 90) and
-                (key < 96) or (key > 122) then
-              begin
-                adit[s].Caption := 'Invalid entry';
-                adit[s].SelectAll;
-                sinput1 := '';
-              end;
+            a:= sinput1;
             for f := 89 to 90 do
-              if (pos(char(f), sinput1) > 0) then
-              begin
-                adit[s].Caption := 'Invalid entry';
-                adit[s].SelectAll;
-                sinput1 := '';
-              end;
+              if (pos(char(f), a) > 0) then
+              begin adit[s].Caption := 'Invalid entry'; adit[s].SelectAll; sinput1 := ''; end;
+
             if (pos('.', sinput1) > 0) then
-            begin
-              adit[s].Clear;
-              sinput1 := '';
-            end;
+            begin adit[s].Clear; sinput1 := ''; end;
             if (sinput1 <> '') and (sinput1 <> 'Invalid entry') then
+
             begin
               stringgrid1.Cells[1, llen] := sinput1;
               stringgrid1.Cells[1, 9] := sixtod(sinput1, 60);
@@ -3423,24 +3332,14 @@ Bases beyond 30 have their own functions.
           end;
 
 
-          // 62
+// 62
           if (llen = 25) then
           begin
-            if (key <> 110) and (key <> 8) and (key <> 16) then
-              if (key < 48) or (key > 57) and (key < 65) or (key > 90) and
-                (key < 96) or (key > 122) then
-              begin
-                adit[s].Caption := 'Invalid entry';
-                adit[s].SelectAll;
-                sinput1 := '';
-              end;
-
+          a:= sinput1;
             if (pos('.', sinput1) > 0) then
-            begin
-              adit[s].Clear;
-              sinput1 := '';
-            end;
+            begin adit[s].Clear; sinput1 := ''; end;
             if (sinput1 <> '') and (sinput1 <> 'Invalid entry') then
+
             begin
               stringgrid1.Cells[1, llen] := sinput1;
               stringgrid1.Cells[1, 9] := s2tod(sinput1, 62);
@@ -3465,7 +3364,7 @@ Bases beyond 30 have their own functions.
         end;
         stringgrid1.cells[1, 26] := 'Not available';
       end;
-  end;
+
 end;
 
 initialization
