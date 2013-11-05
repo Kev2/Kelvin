@@ -1858,6 +1858,7 @@ begin
       Delete(a, pos('.', a), 1);
     if (pos('.', a) > 0) then
     begin adit[s].Caption := 'Invalid entry'; adit[s].SelectAll; end;
+
 {If - is pressed twice, 'Invalid entry' appears}
     a := sinput1;
     if (pos('-', a) > 1) then begin
@@ -1868,16 +1869,14 @@ begin
     a := sinput1;
     for f := 1 to length(a) do
       if (a[f] <> char(46)) and (a[f] <> char(45)) then
-        if (a[f] < char(48)) or (a[f] > char(57)) then
-        begin
-          adit[s].Caption := 'Invalid entry';
-          adit[s].SelectAll;
-        end;
+        if (a[f] < char(46)) or (a[f] > char(57)) then
+        begin adit[s].Caption := 'Invalid entry'; adit[s].SelectAll; sinput1:= ''; end;
 
 {Once numeric entry is validated, the data is sent to ninput1 (double) to avoid error}
+      ninput1:= 0;
     if (sinput1 <> '') and (adit[s].Caption <> 'Invalid entry') and (adit[s].Caption <> '-') then begin
-      ninput1 := strtofloat(sinput1); a:= sinput1; end;
-
+      ninput1 := strtofloat(sinput1); end;
+      if ninput1 <> 0 then
 {Calculation begins every time a key is released}
 
 case listbox1.ItemIndex of
@@ -2369,8 +2368,7 @@ After that, dynamic text boxes are updated.
       begin
         for llen := 1 to 6 do
         begin
-          if alabel[s].Caption = tfuelc[llen].tu then
-          begin
+          if alabel[s].Caption = tfuelc[llen].tu then begin
             milm := tfuelc[llen].tcons / ninput1;
             ang := tfuelc[llen].tcons * ninput1;
 
@@ -2417,8 +2415,8 @@ After that, dynamic text boxes are updated.
             end;
             stringgrid1.Cells[1, llen] := sinput1;
           end;
-        end;
       end;
+end;
 
       // Illumination
       22:
@@ -3101,11 +3099,13 @@ After that, dynamic text boxes are updated.
 different in every unit. For example undenary allows only a. Duodenary allows a and b.
 }
 
+if listbox1.ItemIndex= 7  then begin
+
   // Computer numbers
      // Allowing letters and numbers
      a:= sinput1;
   for validate:= 1 to length(a) do
-         if (a[validate] < char(48)) or (a[validate] > char(57)) and
+         if (a[validate] < char(46)) or (a[validate] > char(57)) and
          (a[validate] < char(65)) or (a[validate] > char(90)) and
          (a[validate] < char(97)) or (a[validate] > char(122)) then
          begin adit[s].Caption := 'Invalid entry'; adit[s].SelectAll; sinput1 := ''; end;
@@ -3117,7 +3117,7 @@ different in every unit. For example undenary allows only a. Duodenary allows a 
         begin
 
 //Binary section, llen < 9
-        if llen < 9 then // Base 2 to 9
+         if llen < 9 then // Base 2 to 9
           begin  // binary    1
      for f:= 1 to length(a) do
          if (a[f] < char(48)) or (a[f] > char(57)) then
@@ -3206,7 +3206,7 @@ Bases beyond 30 have their own functions.
           begin
           for f:= 21 to 52 do
               if (pos(let62[f], a) > 0) then
-              begin adit[s].Caption := 'Invalid entry'; adit[s].SelectAll; sinput1 := '0'; end;
+              begin adit[s].Caption := 'Invalid entry'; adit[s].SelectAll; sinput1 := ''; end;
 
             if (pos('.', sinput1) > 0) then
             begin adit[s].Clear; sinput1 := ''; end;
@@ -3230,6 +3230,10 @@ Bases beyond 30 have their own functions.
 // 36
           if (llen = 21) then
           begin
+            for f:= 27 to 52 do
+                if (pos(let62[f], a) > 0) then
+                begin adit[s].Caption := 'Invalid entry'; adit[s].SelectAll; sinput1 := ''; end;
+
             if (pos('.', sinput1) > 0) then
             begin  adit[s].Clear; sinput1 := ''; end;
 
@@ -3364,6 +3368,7 @@ Bases beyond 30 have their own functions.
         end;
         stringgrid1.cells[1, 26] := 'Not available';
       end;
+end;
 
 end;
 
