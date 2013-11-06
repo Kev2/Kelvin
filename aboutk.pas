@@ -14,15 +14,22 @@ type
   { Tabk }
 
   Tabk = class(TForm)
-      lic: TButton;
+      abbut: TButton;
       clse: TButton;
-    GroupBox1: TGroupBox;
-    Image1: TImage;
-    http: TLabel;
-    maint: TLabel;
-    data: TLabel;
-    CUtility: TLabel;
+      CUtility: TLabel;
+      data: TLabel;
+      GroupBox1: TGroupBox;
+      http: TLabel;
+      Image1: TImage;
+      lic: TButton;
+      maint: TLabel;
+      Memo1: TMemo;
+    Notebook1: TNotebook;
+    abp: TPage;
+    licp: TPage;
+    StaticText1: TStaticText;
     ver: TLabel;
+    procedure abbutClick(Sender: TObject);
     procedure clseClick(Sender: TObject);
     procedure dataClick(Sender: TObject);
     procedure httpClick(Sender: TObject);
@@ -40,10 +47,14 @@ implementation
 
 { Tabk }
 
+procedure Tabk.abbutClick(Sender: TObject);
+begin
+    notebook1.PageIndex:=0;
+end;
 
 procedure Tabk.licClick(Sender: TObject);
 begin
-     licf.ShowModal;
+     notebook1.PageIndex:=1;
 end;
 
 procedure Tabk.clseClick(Sender: TObject);
@@ -51,16 +62,17 @@ begin
     abk.Close;
 end;
 
-procedure Tabk.dataClick(Sender: TObject);
-begin
-//OpenURL('mailto:theo@test.com?subject=test&body=Hello World');
-     OpenURL('mailto:nventafini@gmx.com?subject=Kelvin');
-end;
-
 procedure Tabk.httpClick(Sender: TObject);
 begin
      OpenURL('http://kelvin.freetzi.com');
 end;
+
+
+procedure Tabk.dataClick(Sender: TObject);
+begin
+     OpenURL('mailto:nventafini@gmx.com?subject=Kelvin');
+end;
+
 
 initialization
   {$I aboutk.lrs}
