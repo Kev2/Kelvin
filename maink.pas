@@ -1876,7 +1876,7 @@ begin
       ninput1:= 0;
     if (sinput1 <> '') and (adit[s].Caption <> 'Invalid entry') and (adit[s].Caption <> '-') then begin
       ninput1 := strtofloat(sinput1); end;
-      if ninput1 <> 0 then
+      //if ninput1 <> 0 then
 {Calculation begins every time a key is released}
 
 case listbox1.ItemIndex of
