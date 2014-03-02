@@ -3159,6 +3159,11 @@ Bases beyond 30 have their own functions.
           if (pos('.', sinput1) > 0) then // if . is pressed for second time, the display is cleared
             begin adit[s].Clear; sinput1 := ''; end;
 
+          for f:= 1 to length(a) do
+              if (a[f] < char(48)) or (a[f] > char(57)) then
+                begin adit[s].Caption := 'Invalid entry'; adit[s].SelectAll; sinput1:= ''; end;
+
+
             if (sinput1 <> '') and (sinput1 <> 'Invalid entry') then
             begin
               stringgrid1.Cells[1, llen] := sinput1;
