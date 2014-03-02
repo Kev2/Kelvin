@@ -1876,7 +1876,7 @@ begin
       ninput1:= 0;
     if (sinput1 <> '') and (adit[s].Caption <> 'Invalid entry') and (adit[s].Caption <> '-') then begin
       ninput1 := strtofloat(sinput1); end;
-      if ninput1 <> 0 then
+      //if ninput1 <> 0 then
 {Calculation begins every time a key is released}
 
 case listbox1.ItemIndex of
@@ -3117,7 +3117,7 @@ if listbox1.ItemIndex= 7  then begin
         begin
 
 //Binary section, llen < 9
-        if llen < 9 then // Base 2 to 9
+         if llen < 9 then // Base 2 to 9
           begin  // binary    1
      for f:= 1 to length(a) do
          if (a[f] < char(48)) or (a[f] > char(57)) then
