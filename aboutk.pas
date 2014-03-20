@@ -7,19 +7,34 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, LResources, Forms, Controls, Graphics, Dialogs,
-  StdCtrls, ExtCtrls;
+  StdCtrls, ExtCtrls, Buttons, LCLIntf;
 
 type
 
   { Tabk }
 
   Tabk = class(TForm)
-    GroupBox1: TGroupBox;
-    Image1: TImage;
-    Kelvin: TLabel;
-    Label2: TLabel;
-    CUtility: TLabel;
+      abbut: TButton;
+      clse: TButton;
+      CUtility: TLabel;
+      data: TLabel;
+      GroupBox1: TGroupBox;
+      http: TLabel;
+      Image1: TImage;
+      lic: TButton;
+      maint: TLabel;
+      Memo1: TMemo;
+    Notebook1: TNotebook;
+    abp: TPage;
+    licp: TPage;
+    StaticText1: TStaticText;
     ver: TLabel;
+    procedure abbutClick(Sender: TObject);
+    procedure clseClick(Sender: TObject);
+    procedure dataClick(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+    procedure httpClick(Sender: TObject);
+    procedure licClick(Sender: TObject);
   private
     { private declarations }
   public
@@ -32,6 +47,38 @@ var
 implementation
 
 { Tabk }
+
+
+procedure Tabk.FormActivate(Sender: TObject);
+begin
+    notebook1.PageIndex:=0;
+end;
+
+procedure Tabk.abbutClick(Sender: TObject);
+begin
+    notebook1.PageIndex:=0;
+end;
+
+procedure Tabk.licClick(Sender: TObject);
+begin
+     notebook1.PageIndex:=1;
+end;
+
+procedure Tabk.clseClick(Sender: TObject);
+begin
+    abk.Close;
+end;
+
+procedure Tabk.httpClick(Sender: TObject);
+begin
+     OpenURL('http://kelvin.freetzi.com');
+end;
+
+
+procedure Tabk.dataClick(Sender: TObject);
+begin
+     OpenURL('mailto:nventafini@gmx.com?subject=Kelvin');
+end;
 
 
 initialization

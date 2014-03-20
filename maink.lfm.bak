@@ -2348,7 +2348,7 @@ object kelvinm: Tkelvinm
       Font.Height = -11
       Font.Name = 'Sans'
       MouseWheelOption = mwGrid
-      Options = [goRangeSelect, goColSizing, goEditing, goRowSelect, goThumbTracking, goColSpanning, goScrollKeepVisible]
+      Options = [goRangeSelect, goColSizing, goRowSelect, goThumbTracking, goColSpanning, goScrollKeepVisible]
       ParentFont = False
       ParentShowHint = False
       RowCount = 3

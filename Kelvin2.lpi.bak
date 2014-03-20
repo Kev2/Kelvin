@@ -34,15 +34,12 @@
         <LaunchingApplication PathPlusParams="/usr/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
       </local>
     </RunParams>
-    <RequiredPackages Count="2">
+    <RequiredPackages Count="1">
       <Item1>
-        <PackageName Value="FCL"/>
-      </Item1>
-      <Item2>
         <PackageName Value="LCL"/>
-      </Item2>
+      </Item1>
     </RequiredPackages>
-    <Units Count="16">
+    <Units Count="19">
       <Unit0>
         <Filename Value="Kelvin2.pas"/>
         <IsPartOfProject Value="True"/>
@@ -130,6 +127,21 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ksplash"/>
       </Unit15>
+      <Unit16>
+        <Filename Value="angle.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="angle"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="cnum.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="cnum"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="fuelc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="fuelc"/>
+      </Unit18>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

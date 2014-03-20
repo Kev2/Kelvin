@@ -17,7 +17,7 @@ function ftod(v40: string; b40: integer) :string;
 function fitod(v50: string; b50: integer) :string;
 function sixtod(v60: string; b60: integer) :string;
 function s2tod(v62: string; b62: integer) :string;
-function dtoa(dtv: double; bv: integer) :string;
+function dtoa(dtv: double; bv: integer) :string;   // decimal to all (until 20)
 function dto30(v30: double; b30: integer) :string;
 function dto36(v36: double; b36: integer) :string;
 function dto40(dtv: double; bv: integer) :string;
@@ -126,10 +126,10 @@ var
 ds,ts:      string;
 dtemp: integer;
 zl,al: smallint;
-l:     smallint=1;
+l:     smallint= 1;
 st:   array[1..30] of string;
 begin
-     while dtv > bv do begin
+     while dtv >= bv do begin
      dtemp:= (round(dtv) mod bv);
      dtv:= (round(dtv) div bv);
      st[l]:= inttostr(dtemp); l:= l+1; end;

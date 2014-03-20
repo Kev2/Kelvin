@@ -19,6 +19,7 @@ tfuelc: array[1..6] of tmag;
 
 implementation
 
+
 begin
 tfuelc[1].tu := 'Gallon (US) per 100 miles'; tfuelc[1].tsym:= ''; tfuelc[1].tcons:= 42.514370743; //4.54609028199;
 tfuelc[1].tdef:= '';
