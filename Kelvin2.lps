@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="21">
+    <Units Count="22">
       <Unit0>
         <Filename Value="Kelvin2.pas"/>
         <IsPartOfProject Value="True"/>
@@ -23,12 +23,10 @@
         <Filename Value="press.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="press"/>
-        <EditorIndex Value="1"/>
         <WindowIndex Value="0"/>
         <TopLine Value="62"/>
         <CursorPos X="51" Y="78"/>
         <UsageCount Value="40"/>
-        <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="cdata.pas"/>
@@ -83,7 +81,12 @@
       <Unit11>
         <Filename Value="aboutk.lrs"/>
         <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="3" Y="7"/>
         <UsageCount Value="40"/>
+        <Loaded Value="True"/>
       </Unit11>
       <Unit12>
         <Filename Value="aboutk.pas"/>
@@ -93,8 +96,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="aboutk"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="42"/>
-        <CursorPos X="27" Y="56"/>
+        <TopLine Value="73"/>
+        <CursorPos X="26" Y="88"/>
         <UsageCount Value="40"/>
       </Unit12>
       <Unit13>
@@ -104,14 +107,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="maink"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
         <TopLine Value="3148"/>
         <CursorPos X="11" Y="3162"/>
         <UsageCount Value="40"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit13>
       <Unit14>
         <Filename Value="mass.pas"/>
@@ -173,11 +174,21 @@
         <CursorPos X="1" Y="1"/>
         <UsageCount Value="10"/>
       </Unit20>
+      <Unit21>
+        <Filename Value="maink.lrs"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="3256"/>
+        <CursorPos X="3" Y="3266"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit21>
     </Units>
     <General>
       <ActiveWindowIndexAtStart Value="0"/>
     </General>
-    <JumpHistory Count="25" HistoryIndex="24">
+    <JumpHistory Count="26" HistoryIndex="25">
       <Position1>
         <Filename Value="maink.pas"/>
         <Caret Line="3340" Column="32" TopLine="3332"/>
@@ -275,9 +286,13 @@
         <Caret Line="1872" Column="27" TopLine="1864"/>
       </Position24>
       <Position25>
-        <Filename Value="press.pas"/>
+        <Filename Value="aboutk.lrs"/>
         <Caret Line="1" Column="1" TopLine="1"/>
       </Position25>
+      <Position26>
+        <Filename Value="maink.lrs"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position26>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>
