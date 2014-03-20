@@ -3263,6 +3263,7 @@ LazarusResources.Add('Tkelvinm','FORMDATA',[
   +'le.Color'#7#6'clForm'#5'Width'#3#200#0#0#1#9'Alignment'#7#14'taRightJustify'
   +#7'MaxSize'#2'd'#15'Title.Alignment'#7#14'taRightJustify'#13'Title.Caption'#6
   +#5'Value'#11'Title.Color'#7#6'clForm'#5'Width'#3#200#0#0#1#10'Font.Color'#7#6
+<<<<<<< HEAD
   +'clTeal'#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#7'MaxSize'#2'd'#13'Tit'
   +'le.Caption'#6#5'Units'#11'Title.Color'#7#6'clForm'#5'Width'#3#200#0#0#0#21
   ,'Constraints.MinHeight'#3#220#0#16'DefaultRowHeight'#2#24#7'Enabled'#8#9'Fix'
@@ -3317,4 +3318,59 @@ LazarusResources.Add('Tkelvinm','FORMDATA',[
   +'tion'#6#5'&Help'#4'left'#2''''#3'top'#2#8#0#9'TMenuItem'#5'menab'#7'Caption'
   +#6#6'&About'#8'ShortCut'#2'p'#7'OnClick'#7#10'menabClick'#4'left'#2''''#3'to'
   +'p'#2#8#0#0#0#0#0
+=======
+  +'clTeal'#7'MaxSize'#2'd'#13'Title.Caption'#6#5'Units'#11'Title.Color'#7#6'cl'
+  +'Form'#5'Width'#3#200#0#0#0#21'Constraints.MinHeight'#3#220#0#16'DefaultRowH'
+  ,'eight'#2#24#7'Enabled'#8#9'FixedCols'#2#0#11'Font.Height'#2#245#9'Font.Name'
+  +#6#4'Sans'#16'MouseWheelOption'#7#6'mwGrid'#7'Options'#11#13'goRangeSelect'
+  +#11'goColSizing'#11'goRowSelect'#15'goThumbTracking'#13'goColSpanning'#19'go'
+  +'ScrollKeepVisible'#0#10'ParentFont'#8#14'ParentShowHint'#8#8'RowCount'#2#3
+  +#10'ScrollBars'#7#10'ssVertical'#8'ShowHint'#9#8'TabOrder'#2#0#16'TitleFont.'
+  +'Height'#2#245#14'TitleFont.Name'#6#4'Sans'#7'OnClick'#7#16'StringGrid1Click'
+  +#9'ColWidths'#1#3#200#0#3#200#0#3#200#0#0#0#0#8'TListBox'#8'ListBox1'#22'Anc'
+  +'horSideLeft.Control'#7#6'Panel1'#21'AnchorSideTop.Control'#7#6'Panel1'#23'A'
+  +'nchorSideRight.Control'#7#9'Splitter1'#4'Left'#2#1#6'Height'#3#132#1#4'Hint'
+  +#6#10'Categories'#3'Top'#2#1#5'Width'#3#200#0#5'Align'#7#8'alCustom'#7'Ancho'
+  +'rs'#11#5'akTop'#6'akLeft'#7'akRight'#0#11'Font.Height'#2#245#9'Font.Name'#6
+  +#4'Sans'#13'Items.Strings'#1#6#12'Acceleration'#6#5'Angle'#6#28'Angular Velo'
+  +'city / Frequency'#6#4'Area'#6#14'Atomic Physics'#6#13'Computer Data'#6#23'C'
+  +'omputer Data Flow Rate'#6#16'Computer Numbers'#6#12'Current Loop'#6#7'Densi'
+  +'ty'#6#22'Electrical Capacitance'#6#17'Electrical Charge'#6#18'Electrical Cu'
+  +'rrent'#6#21'Electrical Inductance'#6'%Electrical Resistance and Conductance'
+  +#6#18'Electrical Voltage'#6#25'Electromagnetic Radiation'#6#11'Energy/Work'#6
+  +#10'Flow (dry)'#6#13'Flow (liquid)'#6#5'Force'#6#16'Fuel Consumption'#6#12'I'
+  +'llumination'#6#6'Lenght'#6#9'Luminance'#6#13'Luminous Flux'#6'"Luminous Int'
+  +'ensity (point sources)'#6#23'Magnetic Field Strength'#6#13'Magnetic Flux'#6
+  +#21'Magnetic Flux Density'#6#19'Magnetomotive Force'#6#4'Mass'#6#13'Musical '
+  +'Notes'#6#5'Power'#6#21'Prefixes and Suffixes'#6#19'Pressure and Stress'#6#9
+  +'Shoe Size'#6#13'Specific Heat'#6#14'Speed/Velocity'#6#11'Temperature'#6#22
+  +'Temperature Difference'#6#26'Thermal Conductance (Area)'#6#28'Thermal Condu'
+  +'ctance (Linear)'#6#18'Thermal Resistance'#6#4'Time'#6#6'Torque'#6#19'Viscos'
+  +'ity (Dynamic)'#6#21'Viscosity (Kinematic)'#6#23'Volume and Dry Capacity'#6
+  +#26'Volume and Liquid Capacity'#0#10'ItemHeight'#2#20#7'OnClick'#7#13'ListBo'
+  +'x1Click'#14'ParentShowHint'#8#10'ParentFont'#8#11'ScrollWidth'#3#226#0#8'Sh'
+  +'owHint'#9#8'TabOrder'#2#1#0#0#9'TSplitter'#9'Splitter1'#19'AnchorSideLeft.S'
+  +'ide'#7#9'asrBottom'#4'Left'#3#201#0#6'Height'#3'^'#1#3'Top'#2#1#5'Width'#2#1
+  +#5'Align'#7#8'alCustom'#7'Anchors'#11#0#7'MinSize'#3#200#0#0#0#5'TMemo'#5'me'
+  +'mo1'#22'AnchorSideLeft.Control'#7#9'Splitter1'#21'AnchorSideTop.Control'#7#9
+  +'Splitter2'#18'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSideRight.Control'
+  +#7#6'Panel1'#20'AnchorSideRight.Side'#7#9'asrBottom'#24'AnchorSideBottom.Con'
+  +'trol'#7#6'Panel1'#21'AnchorSideBottom.Side'#7#9'asrBottom'#4'Left'#3#201#0#6
+  +'Height'#2'p'#3'Top'#3#19#1#5'Width'#3'i'#2#7'Anchors'#11#5'akTop'#6'akLeft'
+  +#7'akRight'#8'akBottom'#0#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#13'Li'
+  +'nes.Strings'#1#6#5'memo1'#0#9'MaxLength'#3'b'#2#10'ParentFont'#8#8'ReadOnly'
+  +#9#10'ScrollBars'#7#14'ssAutoVertical'#8'TabOrder'#2#3#0#0#9'TSplitter'#9'Sp'
+  +'litter2'#22'AnchorSideLeft.Control'#7#9'Splitter1'#19'AnchorSideLeft.Side'#7
+  +#9'asrBottom'#23'AnchorSideRight.Control'#7#6'Panel1'#20'AnchorSideRight.Sid'
+  +'e'#7#9'asrBottom'#6'Cursor'#7#8'crVSplit'#4'Left'#3#202#0#6'Height'#2#5#3'T'
+  +'op'#3#14#1#5'Width'#3'h'#2#5'Align'#7#6'alNone'#7'Anchors'#11#5'akTop'#6'ak'
+  +'Left'#7'akRight'#0#5'Color'#7#23'clGradientActiveCaption'#7'MinSize'#3#210#0
+  +#11'ParentColor'#8#12'ResizeAnchor'#7#5'akTop'#0#0#0#9'TMainMenu'#9'MainMenu'
+  +'1'#4'left'#2'P'#3'top'#4#224#255#0#0#0#9'TMenuItem'#5'mfile'#7'Caption'#6#5
+  +'&File'#4'left'#2''''#3'top'#2#8#0#9'TMenuItem'#5'mquit'#7'Caption'#6#5'&Qui'
+  +'t'#8'ShortCut'#2#27#7'OnClick'#7#10'mquitClick'#4'left'#2''''#3'top'#2#8#0#0
+  +#0#9'TMenuItem'#5'mhelp'#7'Caption'#6#5'&Help'#4'left'#2''''#3'top'#2#8#0#9
+  +'TMenuItem'#5'menab'#7'Caption'#6#6'&About'#8'ShortCut'#2'p'#7'OnClick'#7#10
+  +'menabClick'#4'left'#2''''#3'top'#2#8#0#0#0#0#0
+>>>>>>> 41cd8798747724f32474de70c26f2cc80a2b9d4f
 ]);

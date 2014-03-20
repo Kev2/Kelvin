@@ -8,7 +8,10 @@ object abk: Tabk
   Caption = 'About Kelvin'
   ClientHeight = 430
   ClientWidth = 500
+<<<<<<< HEAD
   OnActivate = FormActivate
+=======
+>>>>>>> 41cd8798747724f32474de70c26f2cc80a2b9d4f
   Position = poScreenCenter
   ShowInTaskBar = stNever
   LCLVersion = '1.0.12.0'
