@@ -81,12 +81,10 @@
       <Unit11>
         <Filename Value="aboutk.lrs"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
         <CursorPos X="3" Y="7"/>
         <UsageCount Value="40"/>
-        <Loaded Value="True"/>
       </Unit11>
       <Unit12>
         <Filename Value="aboutk.pas"/>
@@ -127,9 +125,14 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ksplash"/>
-        <TopLine Value="1"/>
-        <CursorPos X="1" Y="1"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="23"/>
+        <CursorPos X="6" Y="37"/>
         <UsageCount Value="40"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit15>
       <Unit16>
         <Filename Value="angle.pas"/>
@@ -176,19 +179,19 @@
       </Unit20>
       <Unit21>
         <Filename Value="maink.lrs"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
+        <ComponentName Value="kelvinm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
         <WindowIndex Value="0"/>
         <TopLine Value="3256"/>
         <CursorPos X="3" Y="3266"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit21>
     </Units>
     <General>
       <ActiveWindowIndexAtStart Value="0"/>
     </General>
-    <JumpHistory Count="26" HistoryIndex="25">
+    <JumpHistory Count="25" HistoryIndex="24">
       <Position1>
         <Filename Value="maink.pas"/>
         <Caret Line="3340" Column="32" TopLine="3332"/>
@@ -286,13 +289,9 @@
         <Caret Line="1872" Column="27" TopLine="1864"/>
       </Position24>
       <Position25>
-        <Filename Value="aboutk.lrs"/>
+        <Filename Value="ksplash.pas"/>
         <Caret Line="1" Column="1" TopLine="1"/>
       </Position25>
-      <Position26>
-        <Filename Value="maink.lrs"/>
-        <Caret Line="1" Column="1" TopLine="1"/>
-      </Position26>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>
