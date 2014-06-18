@@ -1,7 +1,13 @@
 object abk: Tabk
+<<<<<<< HEAD
   Left = 429
   Height = 409
   Top = 126
+=======
+  Left = 418
+  Height = 430
+  Top = 97
+>>>>>>> 02423b73968d25d32c57f35d05d4f7e74aad413d
   Width = 500
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsDialog
@@ -20,8 +26,12 @@ object abk: Tabk
     Height = 343
     Top = 10
     Width = 456
+<<<<<<< HEAD
     PageIndex = 0
     BorderSpacing.Top = 10
+=======
+    PageIndex = 1
+>>>>>>> 02423b73968d25d32c57f35d05d4f7e74aad413d
     TabOrder = 0
     TabStop = True
     object abp: TPage
@@ -1808,7 +1818,11 @@ object abk: Tabk
     Height = 25
     Top = 363
     Width = 75
+<<<<<<< HEAD
     BorderSpacing.Top = 10
+=======
+    BorderSpacing.Top = 20
+>>>>>>> 02423b73968d25d32c57f35d05d4f7e74aad413d
     Caption = 'Licence'
     OnClick = licClick
     TabOrder = 1
