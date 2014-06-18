@@ -7,10 +7,10 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, maink, aboutk, ksplash, accel, angle, angvel, area, aphys,
+  Forms, aboutk, ksplash, accel, angle, angvel, area, aphys,
   cdata, cdflow, cnum, cloop, dens, len, mass, temp, vol, echarge, cur,
   ind, rescon, volt, emr, work, flowld, force, fuelc, lux, magnf, mus, power,
-  prefx, shoe, press, speed, tque, visc, time;
+  prefx, shoe, press, speed, tque, visc, time, maink;
 
 {$IFDEF WINDOWS}{$R Kelvin2.rc}{$ENDIF}
 

@@ -1,7 +1,7 @@
 object kelvinm: Tkelvinm
-  Left = 386
+  Left = 331
   Height = 689
-  Top = 20
+  Top = 36
   Width = 919
   HorzScrollBar.Page = 918
   HorzScrollBar.Visible = False
@@ -2526,6 +2526,10 @@ object kelvinm: Tkelvinm
       Caption = '&Help'
       left = 39
       top = 8
+      object unitsm: TMenuItem
+        Caption = '&Units'
+        OnClick = unitsmClick
+      end
       object menab: TMenuItem
         Caption = '&About'
         ShortCut = 112

@@ -1,37 +1,23 @@
 object abk: Tabk
-<<<<<<< HEAD
-  Left = 429
-  Height = 409
-  Top = 126
-=======
-  Left = 418
-  Height = 430
-  Top = 97
->>>>>>> 02423b73968d25d32c57f35d05d4f7e74aad413d
+  Left = 845
+  Height = 410
+  Top = 231
   Width = 500
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsDialog
   Caption = 'About Kelvin'
-  ClientHeight = 409
+  ClientHeight = 410
   ClientWidth = 500
   OnActivate = FormActivate
   Position = poScreenCenter
   ShowInTaskBar = stNever
   LCLVersion = '1.0.14.0'
   object Notebook1: TNotebook
-    AnchorSideLeft.Control = Owner
-    AnchorSideLeft.Side = asrCenter
-    AnchorSideTop.Control = Owner
     Left = 22
     Height = 343
-    Top = 10
+    Top = 13
     Width = 456
-<<<<<<< HEAD
     PageIndex = 0
-    BorderSpacing.Top = 10
-=======
-    PageIndex = 1
->>>>>>> 02423b73968d25d32c57f35d05d4f7e74aad413d
     TabOrder = 0
     TabStop = True
     object abp: TPage
@@ -43,7 +29,7 @@ object abk: Tabk
         Height = 330
         Top = 13
         Width = 460
-        BorderSpacing.Top = 10
+        BorderSpacing.Top = 20
         Caption = 'Powered by Lazarus'
         ClientHeight = 314
         ClientWidth = 456
@@ -1757,7 +1743,7 @@ object abk: Tabk
           AutoSize = False
           BorderSpacing.Top = 25
           Caption = 'http://kelvin.freetzi.com'
-          Font.Color = clSkyBlue
+          Font.Color = clActiveCaption
           Font.Height = -11
           Font.Name = 'Sans'
           ParentColor = False
@@ -1816,13 +1802,9 @@ object abk: Tabk
     AnchorSideTop.Side = asrBottom
     Left = 213
     Height = 25
-    Top = 363
+    Top = 366
     Width = 75
-<<<<<<< HEAD
     BorderSpacing.Top = 10
-=======
-    BorderSpacing.Top = 20
->>>>>>> 02423b73968d25d32c57f35d05d4f7e74aad413d
     Caption = 'Licence'
     OnClick = licClick
     TabOrder = 1
@@ -1833,7 +1815,7 @@ object abk: Tabk
     AnchorSideTop.Control = lic
     Left = 308
     Height = 25
-    Top = 363
+    Top = 366
     Width = 75
     BorderSpacing.Left = 20
     Caption = 'Close'
@@ -1845,7 +1827,7 @@ object abk: Tabk
     AnchorSideRight.Control = lic
     Left = 118
     Height = 25
-    Top = 363
+    Top = 366
     Width = 75
     Anchors = [akTop, akRight]
     BorderSpacing.Right = 20

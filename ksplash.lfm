@@ -1,7 +1,7 @@
 object splash: Tsplash
   Left = 476
   Height = 312
-  Top = 223
+  Top = 148
   Width = 436
   BorderIcons = []
   BorderStyle = bsNone
@@ -10,6 +10,7 @@ object splash: Tsplash
   ClientWidth = 436
   FormStyle = fsSplash
   OnActivate = FormActivate
+  Position = poDesktopCenter
   LCLVersion = '1.0.14.0'
   object Image1: TImage
     AnchorSideLeft.Control = Owner
