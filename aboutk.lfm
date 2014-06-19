@@ -1,7 +1,13 @@
 object abk: Tabk
+<<<<<<< HEAD
   Left = 417
   Height = 430
   Top = 65
+=======
+  Left = 418
+  Height = 430
+  Top = 122
+>>>>>>> abf04e6832efd81012d6268b40846abf4ef4a171
   Width = 500
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsDialog
@@ -17,7 +23,11 @@ object abk: Tabk
     Height = 343
     Top = 13
     Width = 456
+<<<<<<< HEAD
     PageIndex = 0
+=======
+    PageIndex = 1
+>>>>>>> abf04e6832efd81012d6268b40846abf4ef4a171
     TabOrder = 0
     TabStop = True
     object abp: TPage
@@ -1743,7 +1753,11 @@ object abk: Tabk
           AutoSize = False
           BorderSpacing.Top = 25
           Caption = 'http://kelvin.freetzi.com'
+<<<<<<< HEAD
           Font.Color = clActiveCaption
+=======
+          Font.Color = clSkyBlue
+>>>>>>> abf04e6832efd81012d6268b40846abf4ef4a171
           Font.Height = -11
           Font.Name = 'Sans'
           ParentColor = False

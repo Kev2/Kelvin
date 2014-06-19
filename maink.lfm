@@ -1,7 +1,13 @@
 object kelvinm: Tkelvinm
+<<<<<<< HEAD
   Left = 343
   Height = 689
   Top = 22
+=======
+  Left = 303
+  Height = 689
+  Top = 19
+>>>>>>> abf04e6832efd81012d6268b40846abf4ef4a171
   Width = 919
   HorzScrollBar.Page = 918
   HorzScrollBar.Visible = False
@@ -2233,13 +2239,18 @@ object kelvinm: Tkelvinm
     Left = 231
     Height = 30
     Top = 618
+<<<<<<< HEAD
     Width = 457
+=======
+    Width = 500
+>>>>>>> abf04e6832efd81012d6268b40846abf4ef4a171
     Anchors = [akLeft, akBottom]
     BorderSpacing.Bottom = 20
     ClientHeight = 30
     ClientWidth = 457
     TabOrder = 1
     object LSearch: TLabel
+<<<<<<< HEAD
       AnchorSideLeft.Control = srchPanel
       Left = 11
       Height = 18
@@ -2247,6 +2258,13 @@ object kelvinm: Tkelvinm
       Width = 127
       Anchors = [akLeft]
       BorderSpacing.Left = 10
+=======
+      Left = 7
+      Height = 18
+      Top = 8
+      Width = 127
+      Anchors = []
+>>>>>>> abf04e6832efd81012d6268b40846abf4ef4a171
       Caption = 'Enter unit to search'
       ParentColor = False
     end
@@ -2279,6 +2297,7 @@ object kelvinm: Tkelvinm
       TabOrder = 0
     end
     object esrch: TEdit
+<<<<<<< HEAD
       AnchorSideLeft.Control = LSearch
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = srchPanel
@@ -2286,6 +2305,11 @@ object kelvinm: Tkelvinm
       Left = 148
       Height = 22
       Top = 4
+=======
+      Left = 146
+      Height = 27
+      Top = 1
+>>>>>>> abf04e6832efd81012d6268b40846abf4ef4a171
       Width = 104
       AutoSize = False
       BorderSpacing.Left = 10
