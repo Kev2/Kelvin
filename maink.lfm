@@ -1,7 +1,7 @@
 object kelvinm: Tkelvinm
-  Left = 331
+  Left = 497
   Height = 689
-  Top = 36
+  Top = -9
   Width = 919
   HorzScrollBar.Page = 918
   HorzScrollBar.Visible = False

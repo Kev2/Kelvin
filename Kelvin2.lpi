@@ -8,6 +8,7 @@
       <Title Value="Kelvin"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
     </General>
     <i18n>
       <EnableI18N LFM="False"/>
@@ -92,56 +93,56 @@
         <UnitName Value="echarge"/>
       </Unit9>
       <Unit10>
-        <Filename Value="aboutk.lfm"/>
-        <IsPartOfProject Value="True"/>
-      </Unit10>
-      <Unit11>
-        <Filename Value="aboutk.lrs"/>
-        <IsPartOfProject Value="True"/>
-      </Unit11>
-      <Unit12>
-        <Filename Value="aboutk.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="abk"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="aboutk"/>
-      </Unit12>
-      <Unit13>
         <Filename Value="maink.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="kelvinm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="maink"/>
-      </Unit13>
-      <Unit14>
+      </Unit10>
+      <Unit11>
         <Filename Value="mass.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="mass"/>
-      </Unit14>
-      <Unit15>
+      </Unit11>
+      <Unit12>
         <Filename Value="ksplash.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="splash"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ksplash"/>
-      </Unit15>
-      <Unit16>
+      </Unit12>
+      <Unit13>
         <Filename Value="angle.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="angle"/>
-      </Unit16>
-      <Unit17>
+      </Unit13>
+      <Unit14>
         <Filename Value="cnum.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="cnum"/>
-      </Unit17>
-      <Unit18>
+      </Unit14>
+      <Unit15>
         <Filename Value="fuelc.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="fuelc"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="aboutk.lfm"/>
+        <IsPartOfProject Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="aboutk.lrs"/>
+        <IsPartOfProject Value="True"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="aboutk.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="abk"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="aboutk"/>
       </Unit18>
     </Units>
   </ProjectOptions>

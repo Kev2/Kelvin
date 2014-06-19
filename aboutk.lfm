@@ -1,12 +1,12 @@
 object abk: Tabk
-  Left = 845
-  Height = 410
-  Top = 231
+  Left = 417
+  Height = 418
+  Top = 40
   Width = 500
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsDialog
   Caption = 'About Kelvin'
-  ClientHeight = 410
+  ClientHeight = 418
   ClientWidth = 500
   OnActivate = FormActivate
   Position = poScreenCenter

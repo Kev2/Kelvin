@@ -33,6 +33,7 @@ type
     procedure clseClick(Sender: TObject);
     procedure dataClick(Sender: TObject);
     procedure FormActivate(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure httpClick(Sender: TObject);
     procedure licClick(Sender: TObject);
   private
@@ -47,12 +48,6 @@ var
 implementation
 
 { Tabk }
-
-
-procedure Tabk.FormActivate(Sender: TObject);
-begin
-    notebook1.PageIndex:=0;
-end;
 
 procedure Tabk.abbutClick(Sender: TObject);
 begin
@@ -78,6 +73,16 @@ end;
 procedure Tabk.dataClick(Sender: TObject);
 begin
      OpenURL('mailto:nventafini@gmx.com?subject=Kelvin');
+end;
+
+procedure Tabk.FormActivate(Sender: TObject);
+begin
+         notebook1.PageIndex:=0;
+end;
+
+procedure Tabk.FormCreate(Sender: TObject);
+begin
+
 end;
 
 
