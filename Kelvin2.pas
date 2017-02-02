@@ -17,11 +17,10 @@ uses
 {$R *.res}
 
 begin
-    Application.Title:='Kelvin';
+  Application.Title:='Kelvin';
   Application.Initialize;
   Application.CreateForm(Tkelvinm, kelvinm);
   Application.CreateForm(Tabk, abk);
   Application.CreateForm(Tsplash, splash);
   Application.Run;
 end.
-
