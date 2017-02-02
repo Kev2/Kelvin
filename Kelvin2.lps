@@ -67,11 +67,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="176"/>
         <CursorPos X="43" Y="180"/>
         <UsageCount Value="53"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit10>
       <Unit11>
         <Filename Value="mass.pas"/>
@@ -114,6 +115,7 @@
         <TopLine Value="1732"/>
         <CursorPos X="31" Y="1746"/>
         <UsageCount Value="53"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit16>
       <Unit17>
@@ -122,6 +124,7 @@
         <ComponentName Value="abk"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="64"/>
         <CursorPos X="22" Y="69"/>
         <UsageCount Value="53"/>
@@ -157,7 +160,9 @@
       </Unit21>
       <Unit22>
         <Filename Value="maink.lfm"/>
+        <EditorIndex Value="1"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit22>
       <Unit23>
