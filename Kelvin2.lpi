@@ -5,9 +5,10 @@
     <General>
       <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
-      <Title Value="Chitwanix Kelvin"/>
+      <Title Value="Kelvin"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
     </General>
     <i18n>
       <EnableI18N LFM="False"/>
@@ -39,7 +40,7 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="20">
+    <Units Count="18">
       <Unit0>
         <Filename Value="Kelvin2.pas"/>
         <IsPartOfProject Value="True"/>
@@ -122,20 +123,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit17>
-      <Unit18>
-        <Filename Value="speed.pas"/>
-        <IsPartOfProject Value="True"/>
-      </Unit18>
-      <Unit19>
-        <Filename Value="maink.lfm"/>
-        <IsPartOfProject Value="True"/>
-      </Unit19>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
     <Target>
-      <Filename Value="kelvinc"/>
+      <Filename Value="kelvinf"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
