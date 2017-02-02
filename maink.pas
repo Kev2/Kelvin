@@ -24,6 +24,7 @@ type
   { Tkelvinm }
 
   Tkelvinm = class(TForm)
+    ImageList1: TImageList;
     ACaption: TLabel;
     chlogo: TImage;
     esrch: TEdit;
