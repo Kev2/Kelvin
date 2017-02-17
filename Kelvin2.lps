@@ -66,7 +66,6 @@
         <ComponentName Value="kelvinm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="23" Y="9"/>
         <UsageCount Value="53"/>
@@ -95,11 +94,11 @@
       <Unit14>
         <Filename Value="cnum.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="403"/>
-        <CursorPos X="29" Y="405"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="16"/>
+        <CursorPos X="51" Y="27"/>
         <UsageCount Value="52"/>
+        <Loaded Value="True"/>
       </Unit14>
       <Unit15>
         <Filename Value="fuelc.pas"/>
@@ -189,9 +188,6 @@
         <UsageCount Value="10"/>
       </Unit25>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="-1"/>
-    </General>
     <JumpHistory HistoryIndex="-1"/>
   </ProjectSession>
 </CONFIG>
