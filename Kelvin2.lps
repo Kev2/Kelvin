@@ -95,10 +95,10 @@
         <Filename Value="cnum.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="403"/>
         <CursorPos X="29" Y="405"/>
         <UsageCount Value="52"/>
-        <Loaded Value="True"/>
       </Unit14>
       <Unit15>
         <Filename Value="fuelc.pas"/>
@@ -188,55 +188,9 @@
         <UsageCount Value="10"/>
       </Unit25>
     </Units>
-    <JumpHistory Count="12" HistoryIndex="11">
-      <Position1>
-        <Filename Value="cnum.pas"/>
-        <Caret Line="132" Column="18" TopLine="124"/>
-      </Position1>
-      <Position2>
-        <Filename Value="cnum.pas"/>
-        <Caret Line="89" Column="3" TopLine="79"/>
-      </Position2>
-      <Position3>
-        <Filename Value="cnum.pas"/>
-        <Caret Line="90" Column="3" TopLine="81"/>
-      </Position3>
-      <Position4>
-        <Filename Value="cnum.pas"/>
-        <Caret Line="126" Column="3" TopLine="117"/>
-      </Position4>
-      <Position5>
-        <Filename Value="cnum.pas"/>
-        <Caret Line="149" Column="3" TopLine="140"/>
-      </Position5>
-      <Position6>
-        <Filename Value="cnum.pas"/>
-        <Caret Line="280" Column="3" TopLine="271"/>
-      </Position6>
-      <Position7>
-        <Filename Value="cnum.pas"/>
-        <Caret Line="301" Column="3" TopLine="292"/>
-      </Position7>
-      <Position8>
-        <Filename Value="cnum.pas"/>
-        <Caret Line="322" Column="3" TopLine="313"/>
-      </Position8>
-      <Position9>
-        <Filename Value="cnum.pas"/>
-        <Caret Line="343" Column="3" TopLine="334"/>
-      </Position9>
-      <Position10>
-        <Filename Value="cnum.pas"/>
-        <Caret Line="364" Column="3" TopLine="355"/>
-      </Position10>
-      <Position11>
-        <Filename Value="cnum.pas"/>
-        <Caret Line="385" Column="3" TopLine="376"/>
-      </Position11>
-      <Position12>
-        <Filename Value="cnum.pas"/>
-        <Caret Line="27" Column="18" TopLine="18"/>
-      </Position12>
-    </JumpHistory>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
+    <JumpHistory HistoryIndex="-1"/>
   </ProjectSession>
 </CONFIG>
