@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="26">
+    <Units Count="27">
       <Unit0>
         <Filename Value="Kelvin2.pas"/>
         <IsPartOfProject Value="True"/>
@@ -66,13 +66,10 @@
         <ComponentName Value="kelvinm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="176"/>
-        <CursorPos X="43" Y="180"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="23" Y="9"/>
         <UsageCount Value="53"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit10>
       <Unit11>
         <Filename Value="mass.pas"/>
@@ -98,9 +95,11 @@
       <Unit14>
         <Filename Value="cnum.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="124"/>
-        <CursorPos X="18" Y="132"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="27"/>
+        <CursorPos X="36" Y="27"/>
         <UsageCount Value="52"/>
+        <Loaded Value="True"/>
       </Unit14>
       <Unit15>
         <Filename Value="fuelc.pas"/>
@@ -112,10 +111,10 @@
       <Unit16>
         <Filename Value="aboutk.lfm"/>
         <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="1732"/>
         <CursorPos X="31" Y="1746"/>
         <UsageCount Value="53"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit16>
       <Unit17>
@@ -124,12 +123,10 @@
         <ComponentName Value="abk"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="64"/>
         <CursorPos X="22" Y="69"/>
         <UsageCount Value="53"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit17>
       <Unit18>
         <Filename Value="aboutk.lrs"/>
@@ -160,9 +157,8 @@
       </Unit21>
       <Unit22>
         <Filename Value="maink.lfm"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit22>
       <Unit23>
@@ -189,12 +185,68 @@
         <EditorIndex Value="-1"/>
         <UsageCount Value="10"/>
       </Unit25>
+      <Unit26>
+        <Filename Value="/usr/share/fpcsrc/3.0.0/rtl/objpas/sysutils/sysstrh.inc"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="101"/>
+        <CursorPos X="10" Y="110"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit26>
     </Units>
-    <JumpHistory Count="1">
+    <JumpHistory Count="13" HistoryIndex="12">
       <Position1>
-        <Filename Value="aboutk.pas"/>
-        <Caret Line="69" Column="22" TopLine="64"/>
+        <Filename Value="cnum.pas"/>
+        <Caret Line="132" Column="18" TopLine="124"/>
       </Position1>
+      <Position2>
+        <Filename Value="cnum.pas"/>
+        <Caret Line="90" Column="3" TopLine="80"/>
+      </Position2>
+      <Position3>
+        <Filename Value="cnum.pas"/>
+        <Caret Line="126" Column="3" TopLine="117"/>
+      </Position3>
+      <Position4>
+        <Filename Value="cnum.pas"/>
+        <Caret Line="149" Column="3" TopLine="140"/>
+      </Position4>
+      <Position5>
+        <Filename Value="cnum.pas"/>
+        <Caret Line="280" Column="3" TopLine="271"/>
+      </Position5>
+      <Position6>
+        <Filename Value="cnum.pas"/>
+        <Caret Line="301" Column="3" TopLine="292"/>
+      </Position6>
+      <Position7>
+        <Filename Value="cnum.pas"/>
+        <Caret Line="322" Column="3" TopLine="313"/>
+      </Position7>
+      <Position8>
+        <Filename Value="cnum.pas"/>
+        <Caret Line="343" Column="3" TopLine="334"/>
+      </Position8>
+      <Position9>
+        <Filename Value="cnum.pas"/>
+        <Caret Line="364" Column="3" TopLine="355"/>
+      </Position9>
+      <Position10>
+        <Filename Value="cnum.pas"/>
+        <Caret Line="385" Column="3" TopLine="376"/>
+      </Position10>
+      <Position11>
+        <Filename Value="maink.pas"/>
+        <Caret Line="180" Column="43" TopLine="176"/>
+      </Position11>
+      <Position12>
+        <Filename Value="cnum.pas"/>
+        <Caret Line="27" Column="18" TopLine="18"/>
+      </Position12>
+      <Position13>
+        <Filename Value="cnum.pas"/>
+        <Caret Line="405" Column="17" TopLine="396"/>
+      </Position13>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>
