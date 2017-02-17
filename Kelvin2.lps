@@ -66,6 +66,7 @@
         <ComponentName Value="kelvinm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="23" Y="9"/>
         <UsageCount Value="53"/>
@@ -94,8 +95,8 @@
       <Unit14>
         <Filename Value="cnum.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
         <TopLine Value="403"/>
         <CursorPos X="29" Y="405"/>
         <UsageCount Value="52"/>
