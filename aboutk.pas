@@ -66,7 +66,7 @@ end;
 
 procedure Tabk.httpClick(Sender: TObject);
 begin
-     OpenURL('http://www.ncvsoft.epizy.com');
+     OpenURL('http://www.ncvsoft.heliohost.org/');
 end;
 
 

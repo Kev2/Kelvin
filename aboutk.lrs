@@ -2533,46 +2533,45 @@ LazarusResources.Add('Tabk','FORMDATA',[
   +'arentFont'#8#0#0#6'TLabel'#4'http'#22'AnchorSideLeft.Control'#7#9'GroupBox1'
   +#19'AnchorSideLeft.Side'#7#9'asrCenter'#21'AnchorSideTop.Control'#7#6'Image1'
   +#18'AnchorSideTop.Side'#7#9'asrBottom'#21'AnchorSideBottom.Side'#7#9'asrBott'
-  +'om'#6'Cursor'#7#11'crHandPoint'#4'Left'#3#134#0#6'Height'#2#15#3'Top'#3#214
-  +#0#5'Width'#3#136#0#8'AutoSize'#8#17'BorderSpacing.Top'#2#25#7'Caption'#6#24
-  +'http://ncvsoft.epizy.com'#10'Font.Color'#7#15'clActiveCaption'#11'Font.Heig'
-  +'ht'#2#245#9'Font.Name'#6#4'Sans'#11'ParentColor'#8#10'ParentFont'#8#7'OnCli'
-  +'ck'#7#9'httpClick'#0#0#0#0#5'TPage'#4'licp'#0#5'TMemo'#5'Memo1'#22'AnchorSi'
-  +'deLeft.Control'#7#4'licp'#19'AnchorSideLeft.Side'#7#9'asrCenter'#21'AnchorS'
-  +'ideTop.Control'#7#11'StaticText1'#18'AnchorSideTop.Side'#7#9'asrBottom'#23
-  +'AnchorSideRight.Control'#7#4'licp'#20'AnchorSideRight.Side'#7#9'asrBottom'#4
-  +'Left'#2#1#6'Height'#3#242#0#3'Top'#2#26#5'Width'#3#153#1#7'Anchors'#11#5'ak'
-  +'Top'#6'akLeft'#7'akRight'#0#17'BorderSpacing.Top'#2#5#11'BorderStyle'#7#6'b'
-  +'sNone'#5'Color'#7#9'clMenuBar'#11'Font.Height'#2#247#9'Font.Name'#6#4'Sans'
-  +#13'Lines.Strings'#1#6#233'Kelvin is free software; you can redistribute it '
-  +'and/or modify it under the terms of the GNU General Public Licence as publi'
-  +'shed by the Free Software Foundation; either version 3 of the Licence, or ('
-  +'at your option) any later version.'#6#0#6#227'Kelvin is distributed in the '
-  +'hope that it will be useful, but WITHOUT ANY WARRANTY; without even the imp'
-  +'lied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See '
-  +'the GNU General Public Licence for more details.'#6#0#6#197'You should have'
-  +' received a copy of the GNU General Public Licence along with Kelvin; if no'
-  +'t, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth F'
-  +'loor, Boston, MA 02110-1301 USA.'#0#10'ParentFont'#8#8'ReadOnly'#9#8'TabOrd'
-  +'er'#2#0#0#0#11'TStaticText'#11'StaticText1'#22'AnchorSideLeft.Control'#7#4
-  +'licp'#19'AnchorSideLeft.Side'#7#9'asrCenter'#21'AnchorSideTop.Control'#7#4
-  +'licp'#4'Left'#3#176#0#6'Height'#2#21#3'Top'#2#0#5'Width'#2';'#8'AutoSize'#9
-  +#7'Caption'#6#7'Licence'#11'Font.Height'#2#243#9'Font.Name'#6#4'Sans'#10'Fon'
-  +'t.Style'#11#6'fsBold'#0#10'ParentFont'#8#8'TabOrder'#2#1#0#0#0#0#7'TButton'
-  +#3'lic'#22'AnchorSideLeft.Control'#7#9'Notebook1'#19'AnchorSideLeft.Side'#7#9
-  +'asrCenter'#18'AnchorSideTop.Side'#7#9'asrBottom'#21'AnchorSideBottom.Side'#7
-  ,#9'asrCenter'#4'Left'#3#178#0#6'Height'#2#25#3'Top'#3';'#1#5'Width'#2'K'#7'A'
-  +'nchors'#11#6'akLeft'#8'akBottom'#0#17'BorderSpacing.Top'#2#10#20'BorderSpac'
-  +'ing.Bottom'#2#10#7'Caption'#6#7'Licence'#11'Font.Height'#2#247#9'Font.Name'
-  +#6#4'Sans'#7'OnClick'#7#8'licClick'#10'ParentFont'#8#8'TabOrder'#2#1#0#0#7'T'
-  +'Button'#4'clse'#22'AnchorSideLeft.Control'#7#3'lic'#19'AnchorSideLeft.Side'
-  +#7#9'asrBottom'#21'AnchorSideTop.Control'#7#3'lic'#4'Left'#3#17#1#6'Height'#2
-  +#25#3'Top'#3';'#1#5'Width'#2'K'#18'BorderSpacing.Left'#2#20#7'Caption'#6#5'C'
-  +'lose'#11'Font.Height'#2#247#9'Font.Name'#6#4'Sans'#7'OnClick'#7#9'clseClick'
-  +#10'ParentFont'#8#8'TabOrder'#2#2#0#0#7'TButton'#5'abbut'#21'AnchorSideTop.C'
-  +'ontrol'#7#3'lic'#23'AnchorSideRight.Control'#7#3'lic'#4'Left'#2'S'#6'Height'
-  +#2#25#3'Top'#3';'#1#5'Width'#2'K'#7'Anchors'#11#5'akTop'#7'akRight'#0#19'Bor'
-  +'derSpacing.Right'#2#20#7'Caption'#6#5'About'#11'Font.Height'#2#247#9'Font.N'
-  +'ame'#6#4'Sans'#7'OnClick'#7#10'abbutClick'#10'ParentFont'#8#8'TabOrder'#2#3
-  +#0#0#0
+  +'om'#6'Cursor'#7#11'crHandPoint'#4'Left'#2'~'#6'Height'#2#14#3'Top'#3#214#0#5
+  +'Width'#3#153#0#17'BorderSpacing.Top'#2#25#7'Caption'#6#28'http://ncvsoft.he'
+  +'liohost.org'#10'Font.Color'#7#15'clActiveCaption'#11'Font.Height'#2#245#9'F'
+  +'ont.Name'#6#4'Sans'#11'ParentColor'#8#10'ParentFont'#8#7'OnClick'#7#9'httpC'
+  +'lick'#0#0#0#0#5'TPage'#4'licp'#0#5'TMemo'#5'Memo1'#22'AnchorSideLeft.Contro'
+  +'l'#7#4'licp'#19'AnchorSideLeft.Side'#7#9'asrCenter'#21'AnchorSideTop.Contro'
+  +'l'#7#11'StaticText1'#18'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSideRig'
+  +'ht.Control'#7#4'licp'#20'AnchorSideRight.Side'#7#9'asrBottom'#4'Left'#2#1#6
+  +'Height'#3#242#0#3'Top'#2#26#5'Width'#3#153#1#7'Anchors'#11#5'akTop'#6'akLef'
+  +'t'#7'akRight'#0#17'BorderSpacing.Top'#2#5#11'BorderStyle'#7#6'bsNone'#5'Col'
+  +'or'#7#9'clMenuBar'#11'Font.Height'#2#247#9'Font.Name'#6#4'Sans'#13'Lines.St'
+  +'rings'#1#6#233'Kelvin is free software; you can redistribute it and/or modi'
+  +'fy it under the terms of the GNU General Public Licence as published by the'
+  +' Free Software Foundation; either version 3 of the Licence, or (at your opt'
+  +'ion) any later version.'#6#0#6#227'Kelvin is distributed in the hope that i'
+  +'t will be useful, but WITHOUT ANY WARRANTY; without even the implied warran'
+  +'ty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Gen'
+  +'eral Public Licence for more details.'#6#0#6#197'You should have received a'
+  +' copy of the GNU General Public Licence along with Kelvin; if not, write to'
+  +' the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Bosto'
+  +'n, MA 02110-1301 USA.'#0#10'ParentFont'#8#8'ReadOnly'#9#8'TabOrder'#2#0#0#0
+  +#11'TStaticText'#11'StaticText1'#22'AnchorSideLeft.Control'#7#4'licp'#19'Anc'
+  +'horSideLeft.Side'#7#9'asrCenter'#21'AnchorSideTop.Control'#7#4'licp'#4'Left'
+  +#3#176#0#6'Height'#2#21#3'Top'#2#0#5'Width'#2';'#8'AutoSize'#9#7'Caption'#6#7
+  +'Licence'#11'Font.Height'#2#243#9'Font.Name'#6#4'Sans'#10'Font.Style'#11#6'f'
+  +'sBold'#0#10'ParentFont'#8#8'TabOrder'#2#1#0#0#0#0#7'TButton'#3'lic'#22'Anch'
+  +'orSideLeft.Control'#7#9'Notebook1'#19'AnchorSideLeft.Side'#7#9'asrCenter'#18
+  +'AnchorSideTop.Side'#7#9'asrBottom'#21'AnchorSideBottom.Side'#7#9'asrCenter'
+  ,#4'Left'#3#178#0#6'Height'#2#25#3'Top'#3';'#1#5'Width'#2'K'#7'Anchors'#11#6
+  +'akLeft'#8'akBottom'#0#17'BorderSpacing.Top'#2#10#20'BorderSpacing.Bottom'#2
+  +#10#7'Caption'#6#7'Licence'#11'Font.Height'#2#247#9'Font.Name'#6#4'Sans'#7'O'
+  +'nClick'#7#8'licClick'#10'ParentFont'#8#8'TabOrder'#2#1#0#0#7'TButton'#4'cls'
+  +'e'#22'AnchorSideLeft.Control'#7#3'lic'#19'AnchorSideLeft.Side'#7#9'asrBotto'
+  +'m'#21'AnchorSideTop.Control'#7#3'lic'#4'Left'#3#17#1#6'Height'#2#25#3'Top'#3
+  +';'#1#5'Width'#2'K'#18'BorderSpacing.Left'#2#20#7'Caption'#6#5'Close'#11'Fon'
+  +'t.Height'#2#247#9'Font.Name'#6#4'Sans'#7'OnClick'#7#9'clseClick'#10'ParentF'
+  +'ont'#8#8'TabOrder'#2#2#0#0#7'TButton'#5'abbut'#21'AnchorSideTop.Control'#7#3
+  +'lic'#23'AnchorSideRight.Control'#7#3'lic'#4'Left'#2'S'#6'Height'#2#25#3'Top'
+  +#3';'#1#5'Width'#2'K'#7'Anchors'#11#5'akTop'#7'akRight'#0#19'BorderSpacing.R'
+  +'ight'#2#20#7'Caption'#6#5'About'#11'Font.Height'#2#247#9'Font.Name'#6#4'San'
+  +'s'#7'OnClick'#7#10'abbutClick'#10'ParentFont'#8#8'TabOrder'#2#3#0#0#0
 ]);
